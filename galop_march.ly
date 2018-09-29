@@ -213,14 +213,14 @@ romantic-two-lower = \relative c {
 }
 
 bes-upper = \relative c'''{
-  f4 g | f8 d bes4 | d ees | d8 c f,4 | r8 c d ees | e f bes4~bes8 r r4| r2 | 
+  f4 g | f8 d bes4 | d ees | d8 c f,4 | r8 c d ees | e f bes4~bes8 r r4| R2 | 
   \ottava #1 {
     \mo 1{f'4 g | f8 d bes4 | d ees | d8 c g4~|g8 a bes c d ees f g | a4 f |}
     } <bes d f>2
 }
 
 bes-lower = \relative c''{
-  f4 g | f8 d bes4 | d ees | d8 c f,4 | r2 | r2 | r8 a bes d | f2 |
+  f4 g | f8 d bes4 | d ees | d8 c f,4 | R2 | R2 | r8 a bes d | f2 |
   f4 g | f8 d bes4 | d ees | d8 c g4~|g8 a bes c d ees f g | <c, ees f a>4 q | <bes d f bes>2|
 }
 
@@ -281,8 +281,8 @@ piano-one-upper = \relative c' {
     \orig-upper-intro
     % benson trill
         \afterGrace g''2 {f32 g} | a8 \mo1 {gis8 a4~a8 gis a4~a8 gis a4~a8 gis a4}
-        r2 r2 r4 a8 gis | \mo1 {a8 g fis e | d4 r}
-        r2 r2 r2 
+        R2 R2 r4 a8 gis | \mo1 {a8 g fis e | d4 r}
+        R2 R2 R2 
     \transpose d d, {\d-d-d-high     \d-d-d-high}
     \f-g-c-high-accomp r8 r4
 
@@ -298,8 +298,8 @@ piano-one-upper = \relative c' {
 
     \key d \major
      \orig-upper-intro
-     \afterGrace <g' g'>2 {f'32 g} | a8 r r4 | r2 r2 r2 | r2 r2 r2 r4
-        g,16 a g fis | e fis e d cis d cis b | a b a g fis g fis e | d e d cis b cis b a | g a g fis e fis e d | 
+     \afterGrace <g g'>2 {f'32 g} | a8 r r4 | R2 R2 R2 | R2 R2 R2 r4
+        g16 a g fis | e fis e d cis d cis b | a b a g fis g fis e | d e d cis b cis b a | g a g fis e fis e d | 
         cis r gis' a ais b bis cis | d dis e eis fis g gis a | ais b bis cis d dis e eis | fis g gis a ais b bis cis
     \transpose d d, {\d-d-d-high     \d-d-d-high}
     \f-g-c-high-accomp
@@ -326,7 +326,7 @@ piano-one-lower = \relative c {
     \transpose a a, {\orig-upper-intro}
     % benson trill
         \afterGrace g''2 {f32 g} | a8 r r4 | <d, a' d>2 <cis a' cis>4 r | <f a f'>2 <e a e'>4 r|
-        r2 | a'8 gis a gis | a g fis e | d4 r | r2 r2 r2
+        R2 | a'8 gis a gis | a g fis e | d4 r | R2 R2 R2
         \transpose d d, { \d-d-d-low      \d-d-d-low }
     \clef bass      \f-g-c-low-accomp r8 r4
 
@@ -343,8 +343,8 @@ piano-one-lower = \relative c {
     \key d \major
 
     \clef treble \transpose a a, {\orig-upper-intro}
-    \afterGrace <g g'>2 {f'32 g} | a8 r8 r4| r2 r2 r2 |
-        \repeat unfold 7 {g''16 fis g fis} r4 | r2 r2 r2 r2 r4
+    \afterGrace <g' g'>2 {f'32 g} | a8 r8 r4| R2 R2 R2 |
+        \repeat unfold 7 {g'16 fis g fis} r4 | R2 R2 R2 R2 r4
         ais,,,16 b bis cis | d dis e eis fis g gis a | ais b bis c d dis e eis | fis g gis a ais b bis cis|
     \transpose d d, { \d-d-d-low      \d-d-d-low }
     \clef bass      \f-g-c-low-accomp
@@ -516,5 +516,5 @@ piano-two-lower = \relative c {
       \override ChordName #'font-size = #-3
     }
   }
-  % \midi {}
+  \midi {}
 }
